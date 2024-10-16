@@ -1,0 +1,10 @@
+{
+    "plugin_type_name": "match",
+    "plugin_class_name": "matcher_contribution",
+    "name": "Existing Contact",
+    "description": "Will try to create contacts that do not exist yet.",
+    "weight": "0",
+    "config": {
+    },
+    "state": {}
+}

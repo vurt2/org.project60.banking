@@ -265,5 +265,19 @@ class CRM_Banking_Upgrader extends CRM_Extension_Upgrader_Base {
     return true;
   }
 
+  /**
+   * Upgrader for me:
+   *
+   * Update options/matchers/etc.
+   *
+   * @return TRUE on success
+   */
+  public function upgrade_0806() {
+    // update option groups
+    $this->ctx->log->info('Updated options.');
+    banking_civicrm_install_options(_banking_options());
+    return true;
+  }
+
 
 }
